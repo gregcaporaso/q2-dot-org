@@ -1,0 +1,40 @@
+version: 1
+project:
+  title: QIIME 2 landing page
+  description: Landing page for the QIIME 2 microbiome multi-omics data science platform.
+  keywords: ["bioinformatics", "data science", "microbiome", "multi-omics", "16S", "rRNA", "metagenome"]
+  authors: ["Greg Caporaso"]
+  github: https://github.com/qiime2
+  # bibliography: []
+site:
+  template: book-theme # this will become local path to my theme
+  title: QIIME 2
+  logo: /assets/images/qiime2.svg
+  favicon: /assets/images/favicon.ico
+  logo_text: Microbiome Data Science.
+  hide_toc: True
+  projects:
+    - slug: overview
+      path: .
+  nav:
+    - title: Community
+      url: https://forum.qiime2.org
+    - title: Learn
+      children:
+        - title: Video courses
+          url: https://youtube.com/qiime2
+        - title: Cancer Microbiome Intervention Tutorial
+          url: https://docs.qiime2.org/jupyterbooks/cancer-microbiome-intervention-tutorial/
+        - title: User documentation
+          url: https://docs.qiime2.org
+        - title: Developer documentation
+          url: https://dev.qiime2.org
+  actions:
+    - title: Code of Conduct
+      url: https://forum.qiime2.org/t/qiime-2-community-code-of-conduct/9057
+    - title: Cite QIIME 2
+      url: /cite
+    - title: Get help
+      url: https://forum.qiime2.org
+  domains:
+    - qiime2.org
